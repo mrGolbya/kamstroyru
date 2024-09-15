@@ -1,0 +1,44 @@
+html,body,div,span,p,a,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,label,input,select,textarea,blockquote,tabre,tbody,th,td,object,iframe,figure{ margin: 0; padding: 0; border: 0; vertical-align: baseline; font-weight: normal; }
+a{ text-decoration: none; }
+a img{ border: 0; }
+img{ display: block; padding: 0; margin: 0; }
+p img{ display: inline-block; vertical-align: middle; }
+input,select,textarea{ outline: 0; }
+table{ border: 0; border-collapse: collapse; border-spacing: 0; }
+table th{ border: 0; border-collapse: collapse; border-spacing: 0; font-weight: normal; }
+table td{ border: 0; border-collapse: collapse; border-spacing: 0; }
+.clear{ height: 1px; clear: both; }
+.nomargin{ margin: 0; }
+
+@font-face{ font-family: gothic; src: url(../fonts/gothic.ttf); }
+@font-face{ font-family: gothicb; src: url(../fonts/gothicb.ttf); }
+@font-face{ font-family: gothicbi; src: url(../fonts/gothicbi.ttf); }
+@font-face{ font-family: gothici; src: url(../fonts/gothici.ttf); }
+
+@font-face{ font-family: neris; src: url(../fonts/NerisLight.ttf); }
+@font-face{ font-family: opensans; src: url(../fonts/open-sans.ttf); }
+@font-face{ font-family: opensansbold; src: url(../fonts/open-sans-bold.ttf); }
+@font-face{ font-family: opensansitalic; src: url(../fonts/open-sans-italic.ttf); }
+
+body{ display: block; background: #fff; margin: 0; padding: 20px 50px; box-sizing: border-box; max-width: 920px; font: 14px gothic, Calibri, Arial, Tahoma; color: #000000; }
+body.inner{ background-position: top -300px center; }
+
+h1{ font: 1.8em gothicb; margin-bottom: 20px; color: #5a3807; }
+h2{ font: 1.6em gothicb; margin-bottom: 25px; color: #5a3807; }
+h2.topmargin{ margin-top: 80px; margin-bottom: 15px; border-bottom: 1px solid #cccccc; }
+h3{ font: 1.2em gothicb; margin-bottom: 25px; color: #5a3807; }
+h4{ font: 1em gothicb; margin-bottom: 25px; color: #5a3807; }
+h5{ font: 1em gothicb; margin-bottom: 25px; color: #313131; }
+h6{ font: 1em gothicb; margin-bottom: 25px; color: #313131; }
+img{ max-width: 100%; height: auto; }
+p{ margin-bottom: 25px; }
+a{ text-decoration: underline; }
+
+.akciya{ margin-bottom: 50px; }
+.akciya td{ vertical-align: middle; }
+.akciya td:nth-of-type(1){ width: 300px; }
+.akciya td:nth-of-type(1) img{ width: 300px; }
+
+body::-webkit-scrollbar-track{ background-color: #f5f5f5; }
+body::-webkit-scrollbar{ width: 7px; background-color: #f5f5f5; }
+body::-webkit-scrollbar-thumb{ background-color: #cccccc; border: none; }
