@@ -3601,53 +3601,41 @@ button.button {
 
 
 .header .container .socials a {
-  position: relative;
+
   width: 33px;
   height: 33px;
-  border: 1px solid var(--color-green);
+  /* border: 1px solid var(--color-green); */
   border-radius: 50%;
   transition: 0.3s;
-}
-
-.header .container .socials a:hover {
-  border: 1px solid #519104;
-
-}
-
-.header .container .socials a:before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 20px;
-  height: 20px;
   margin-right: 2.5rem;
-  transition: all 0.5s ease;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   margin: 0;
   padding: 0;
-
+  filter: grayscale(1);
 }
 
-.header .container .socials .tg:before {
+.header .container .socials a:hover {
+  filter: grayscale(0);
+}
+
+
+
+.header .container .socials .tg {
   background-image: url('../img/social_icon_tg.svg');
 
 }
-.header .container .socials .wa:before {
+.header .container .socials .wa {
   background-image: url('../img/social_icon_wa.svg'); 
-  width: 26px;
-  height: 26px;
 }
 
-.header .container .socials .vk:before {
+.header .container .socials .vk{
   background-image: url('../img/social_icon_vk.svg');
 
 }
 
-.header .container .socials .yotube:before {
+.header .container .socials .yotube {
   background-image: url('../img/social_icon_youtube.svg');
 }
 
