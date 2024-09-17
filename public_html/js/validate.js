@@ -312,3 +312,104 @@ document.querySelectorAll('.item .button').forEach(e=>{
 document.querySelectorAll('main .equip .item a:nth-child(2)').forEach(e=>{
   e.insertAdjacentHTML('beforeend','<input type="submit" name="submit" id="submit" class="button" data-src="#callback" data-fancybox value="Получить предложение">')
 })
+
+document.querySelector('footer').insertAdjacentHTML('afterbegin',`<form class="form" data-user-form>
+          <input type="hidden" name="callback-title" id="callback-title" value="Заявка на обратный звонок">
+          <div class="txt">
+            <p class="h2">Остались вопросы? Напишите нам</p>
+            <div class="form-wrapper">
+            <div class="wrapper">
+            
+              
+            
+           
+         
+          <div class="form-box">
+            <input type="text" name="name" data-user-name="" placeholder="Введите имя">
+            <small></small>
+        </div>
+  
+          <div class="form-box">
+            <input type="tel" name="tel" class="tel" data-phone-pattern autocomplete="off" placeholder="+7 (___) ___-__-__">
+            <small></small>
+        </div>
+
+      <div class="form-box">
+        <input type="email" name="email" id="email" data-user-email autocomplete="off" placeholder="Введите Ваш email">
+        <small></small>
+    </div>
+      </div>
+      <div class="wrapper"> 
+        <div class="form-box">
+          <textarea name="text" rows="4" placeholder="Дополнительная информация"></textarea>
+          <small></small>
+        </div>
+        <p>Отправляя заявку Вы соглашаетесь с политикой конфидициальности</p>
+        
+        <!-- <input type="submit" name="submit" id="submit" class="button" value="Отправить заявку"> -->
+        <input type="submit" name="submit" id="submit" class="button" value="Отправить заявку">
+      </div>
+    </div>
+          </div>
+        </form>`)
+document.body.insertAdjacentHTML('beforeend',`<div id="callback" class="callback" style="display: none;">
+    <div class="container">
+      <form class="form" data-user-form>
+        <div class="txt">
+          <p class="h2">Заказать обратный звонок</p>
+          <p class="text">Оставьте свой номер телефона и мы перезвоним Вам в ближайшее время</p>
+          <div class="form-box">
+            
+          <input type="hidden" name="callback-title" id="callback-title" value="Заявка на обратный звонок">
+          <small></small>
+        </div>
+        <div class="form-box">
+          <input type="text" name="name" data-user-name="" placeholder="Введите имя">
+          <small></small>
+      </div>
+
+        <div class="form-box">
+          <input type="tel" name="tel" class="tel" data-phone-pattern autocomplete="off" placeholder="+7 (___) ___-__-__">
+          <small></small>
+      </div>
+     
+          
+          <div class="form-box">
+            <input type="checkbox" name="checkbox" id="callback-consent" data-user-checkbox>
+            <label for="callback-consent">Согласие на обработку персональных данных</label>
+            <small></small>
+        </div>
+        <div class="form-box">
+          <input type="checkbox" name="checkbox-1" id="callback-consent-1" data-user-checkbox>
+          <label for="callback-consent-1">Согласен на получение акций/предложений от Камстройсервис</label>
+          <small></small>
+      </div>
+          <input type="submit" name="callback-submit" id="callback-submit" class="button" value="Отправить заявку">
+        </div>
+      </form>
+    </div>
+  </div>`)
+
+
+  document.querySelector('nav#top').remove()
+  document.querySelector('#leaf').insertAdjacentHTML('beforebegin',`<header class="header">
+
+  <div class="container">
+    <button class="button" data-fancybox data-src="#callback">Заказать звонок</button>
+  <nav id="top">
+    <div><a href="o_kompanii">О компании</a></div>
+    <div><a href="akciya">Акции</a></div>
+    <div><a href="otzyvy">Отзывы</a></div>
+    <div><a href="vopros-otvet">Вопрос-ответ</a></div>
+    <div><a href="fotootchety">Фото/видео отчеты</a></div>
+    <div><a href="dogovor">Договор</a></div>
+    <div><a href="kontakty">Контакты</a></div>
+  </nav>
+  <div class="socials">
+    <a href="https://api.whatsapp.com/send/?phone=79268059482" class="wa" target="_blank"></a>
+    <a href="https://t.me/+79268059482" class="tg" target="_blank"></a>
+  </div>
+  
+</div>
+    
+</header>`)
