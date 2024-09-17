@@ -290,3 +290,25 @@ window.addEventListener(
 );
 // }
 
+
+//disable click a link
+document.querySelectorAll('.item .button').forEach(e=>{
+  e.addEventListener('mousemove', e=>{
+    console.log(!document.location.href.includes(e.target.pathname))
+    
+    if(!document.location.href.includes(e.target.pathname)) {
+      e.preventDefault();
+      }
+  })
+  e.addEventListener('click', e=>{
+    console.log(!document.location.href.includes(e.target.pathname))
+    
+    if(!document.location.href.includes(e.target.pathname)) {
+      e.preventDefault();
+      }
+  })
+})
+
+document.querySelectorAll('main .equip .item a:nth-child(2)').forEach(e=>{
+  e.insertAdjacentHTML('beforeend','<input type="submit" name="submit" id="submit" class="button" data-src="#callback" data-fancybox value="Получить предложение">')
+})
