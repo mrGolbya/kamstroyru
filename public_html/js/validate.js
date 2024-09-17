@@ -221,7 +221,7 @@ window.addEventListener("submit", function (e) {
 
 function formSendServer(e) {
   let ajaxSend = async (FORM_DATA) => {
-    let response = await fetch("/ajax/ajax_send_mail.php", {
+    let response = await fetch("sndmsg.php", {
       method: "POST",
       body: FORM_DATA,
     });
