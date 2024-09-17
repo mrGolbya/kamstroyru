@@ -190,7 +190,6 @@ window.addEventListener("submit", function (e) {
   isCheckBoxValid = checkBox(e);
 
   formCorrectValidation(e);
- console.log(isCheckBoxValid)
   if (
     !(isTelValid && arrInput.length == 2) ||
     !(isTelValid /*&& isUsernameValid*/ && isCheckBoxValid && arrInput.length >= 3)
@@ -198,11 +197,12 @@ window.addEventListener("submit", function (e) {
   
   e.preventDefault();
  
-  
+  console.log(arrInput.length)
   // submit to the server if the form is valid
   if (
     (isTelValid && arrInput.length == 2) ||
-    (isTelValid /*&& isUsernameValid*/ && isCheckBoxValid && arrInput.length >= 3)
+    (isTelValid /*&& isUsernameValid*/ && isCheckBoxValid && arrInput.length >= 3) ||
+    (isTelValid && arrInput.length == 5)
   ) {
     
     userForm.classList.add("_sending");

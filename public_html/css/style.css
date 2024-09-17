@@ -467,7 +467,7 @@ i {
 
 #menu .logo {
   display: block;
-  padding: 40px 10px 10px 15px;
+  padding: 50px 10px 10px 15px;
 }
 
 #menu .logo a {
@@ -3729,7 +3729,7 @@ html{ font-size: clamp(1px,.67vw,10px); }
 
 .callback .button {
   display: block;
-  background: linear-gradient(90deg, #7EBC2B 0%, #A9D333 100%);;
+  background: var(--color-green);
   color: #fff;
   border-radius: 1rem;
   text-align: center;
@@ -3737,6 +3737,9 @@ html{ font-size: clamp(1px,.67vw,10px); }
   text-transform: uppercase;
   height: 4.2rem;
   align-self: center;
+}
+.callback .button:hover {
+  background-color: #519104;
 }
 
 
@@ -3856,9 +3859,9 @@ form .form-box {
   background: var(--color-white);
   border-radius: .6rem;
 }
-form .form-box small {
+form small {
   position: absolute;
-  top: 2%;
+  /* top: 2%; */
   left: 1.2rem;
   color: var(--error-color);
 }
@@ -3868,8 +3871,8 @@ form .form-box.success input{
 form .form-box.error input {
  border: 1px solid var(--error-color);
 }
-form .form-box.error small {
-  top: 80%;
+form .form-box.error label + small {
+  top: 80% ;
   left: 0;
 }
 form .form-box.error label:before{
@@ -3975,39 +3978,59 @@ form input[type=text], form input[type=tel], form input[type=email], form input[
   box-sizing: border-box;
   outline: 0;
   border-radius: .5rem;
+  overflow-y: hidden;
 }
-footer form .form-box textarea{
+form textarea{
 height: 6rem;
 }
+footer{
+  border: 0;
+}
 footer form{
-  background-color: #ececec;
+  padding: 3rem 4rem;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 footer form .txt{
   display: flex;
   flex-direction: column;
+  gap: 2rem;
 }
 footer form .h2{
   text-align: center;
+  font-size: 3.2rem;
+  color: var(--color-green);
 }
 footer form .form-wrapper{
   display: flex;
   flex-direction: row;
+  gap: 4rem;
 }
 footer form .wrapper{
   width: 50%;
   display: flex;
   flex-direction: column;
-
+  justify-content: space-between;
+  gap: 1rem;
 }
 footer form div{
   padding: 0;
+}
+footer form p{
+  margin: 0;
 }
 footer form .form-box {
   background: inherit;
 }
 footer .button {
+  position: relative;
   display: block;
-  background: linear-gradient(90deg, #7EBC2B 0%, #A9D333 100%);
+  background: var(--color-green);
+  transform: translate3d(0, 0, 0);
   color: #fff;
   border-radius: 1rem;
   text-align: center;
@@ -4015,8 +4038,13 @@ footer .button {
   text-transform: uppercase;
   height: 4.2rem;
   transition: 0.5s;
+  z-index: 1;
+}
+footer .button:hover{
+  background-color: #519104;
+}
 
-}
-footer .button:hover {
-  background: linear-gradient(90deg, #7EBC2B 0%, #7EBC2B 100%);
-}
+
+
+
+
